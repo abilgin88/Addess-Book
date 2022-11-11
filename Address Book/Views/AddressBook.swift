@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AddressBook: View {
-    let index: [Int] = [0,1,2,3]
     var body: some View {
         ZStack {
             AppColor.mainColor
@@ -23,19 +22,22 @@ struct AddressBook: View {
                 Spacer() // after Title
                 
                 VStack { // VStack:2 ->include 4 Contacts view
-                    // HStack -> For Each Contact View
-                    ForEach(index, id: \.self) { indexNum in
+                    
+                    // A ForEach structure that allows us to loop through a collection of data and create a corresponding view for each element
+                    ForEach(0..<4, id: \.self) { index in
+                        
+                        // Refactoring the HStack
                         HStack {
                             
                             VStack{ // VStack:3 -> For 2 text line in Botton
-                                Text("Name at index \(self.index[indexNum])")
+                                Text("Name at index \(index)")
                                 Text("Postal code")
                                     .font(.caption)
                             } // VStack:3 end
                             
                             
                             Button(action: { // For Star button
-                                print("Star tapped at index: 0")
+                                print("Star tapped at index: \(index)")
                             }) {
                                 Image(systemName: "star")
                             }
