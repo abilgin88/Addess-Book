@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddressBook: View {
+struct AddressBookView: View {
     var body: some View {
         ZStack {
             AppColor.mainColor
@@ -29,6 +29,6 @@ struct AddressBook: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        AddressBook()
+        AddressBookView()
     }
 }
