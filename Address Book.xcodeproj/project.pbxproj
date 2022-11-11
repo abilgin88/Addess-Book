@@ -11,6 +11,7 @@
 		85E78048291E636D004F6C72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E78047291E636D004F6C72 /* ContentView.swift */; };
 		85E7804A291E636E004F6C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E78049291E636E004F6C72 /* Assets.xcassets */; };
 		85E7804D291E636E004F6C72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E7804C291E636E004F6C72 /* Preview Assets.xcassets */; };
+		85E78054291E642F004F6C72 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E78053291E642F004F6C72 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		85E78047291E636D004F6C72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		85E78049291E636E004F6C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85E7804C291E636E004F6C72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		85E78053291E642F004F6C72 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				85E78045291E636D004F6C72 /* Address_BookApp.swift */,
 				85E78047291E636D004F6C72 /* ContentView.swift */,
+				85E78053291E642F004F6C72 /* AppColors.swift */,
 				85E78049291E636E004F6C72 /* Assets.xcassets */,
 				85E7804B291E636E004F6C72 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E78054291E642F004F6C72 /* AppColors.swift in Sources */,
 				85E78048291E636D004F6C72 /* ContentView.swift in Sources */,
 				85E78046291E636D004F6C72 /* Address_BookApp.swift in Sources */,
 			);
