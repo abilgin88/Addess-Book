@@ -54,8 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				85E78045291E636D004F6C72 /* Address_BookApp.swift */,
-				85E78047291E636D004F6C72 /* AddressBook.swift */,
-				85E78053291E642F004F6C72 /* AppColors.swift */,
+				85E78055291E67CB004F6C72 /* Views */,
+				85E78057291E67E8004F6C72 /* Models */,
 				85E78049291E636E004F6C72 /* Assets.xcassets */,
 				85E7804B291E636E004F6C72 /* Preview Content */,
 			);
@@ -68,6 +68,22 @@
 				85E7804C291E636E004F6C72 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85E78055291E67CB004F6C72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85E78047291E636D004F6C72 /* AddressBook.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85E78057291E67E8004F6C72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85E78053291E642F004F6C72 /* AppColors.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
