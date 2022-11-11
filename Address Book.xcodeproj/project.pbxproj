@@ -13,6 +13,8 @@
 		85E7804D291E636E004F6C72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E7804C291E636E004F6C72 /* Preview Assets.xcassets */; };
 		85E78054291E642F004F6C72 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E78053291E642F004F6C72 /* AppColors.swift */; };
 		85E78073291EAB44004F6C72 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E78072291EAB44004F6C72 /* ContactsView.swift */; };
+		85E78075291EB15F004F6C72 /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E78074291EB15F004F6C72 /* AddressBook.swift */; };
+		85E78077291EB1CE004F6C72 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E78076291EB1CE004F6C72 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		85E7804C291E636E004F6C72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85E78053291E642F004F6C72 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		85E78072291EAB44004F6C72 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		85E78074291EB15F004F6C72 /* AddressBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddressBook.swift; path = "Address Book/Views/AddressBook.swift"; sourceTree = SOURCE_ROOT; };
+		85E78076291EB1CE004F6C72 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		85E78057291E67E8004F6C72 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				85E78074291EB15F004F6C72 /* AddressBook.swift */,
+				85E78076291EB1CE004F6C72 /* Contact.swift */,
 				85E78053291E642F004F6C72 /* AppColors.swift */,
 			);
 			path = Models;
@@ -159,9 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E78077291EB1CE004F6C72 /* Contact.swift in Sources */,
 				85E78054291E642F004F6C72 /* AppColors.swift in Sources */,
 				85E78048291E636D004F6C72 /* AddressBookView.swift in Sources */,
 				85E78046291E636D004F6C72 /* Address_BookApp.swift in Sources */,
+				85E78075291EB15F004F6C72 /* AddressBook.swift in Sources */,
 				85E78073291EAB44004F6C72 /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
