@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddressBook: View {
+    let index: [Int] = [0,1,2,3]
     var body: some View {
         ZStack {
             AppColor.mainColor
@@ -21,16 +22,13 @@ struct AddressBook: View {
                 
                 Spacer() // after Title
                 
-                VStack { // VStack:2 ->include 4 Contacts views
-                                 
-                    
+                VStack { // VStack:2 ->include 4 Contacts view
                     // HStack -> For Each Contact View
-                    
-                    // Contact view: 0
+                    ForEach(index, id: \.self) { indexNum in
                         HStack {
                             
                             VStack{ // VStack:3 -> For 2 text line in Botton
-                                Text("Name at index 0")
+                                Text("Name at index \(self.index[indexNum])")
                                 Text("Postal code")
                                     .font(.caption)
                             } // VStack:3 end
@@ -44,65 +42,7 @@ struct AddressBook: View {
                         } // HStack end: include one contact view
                         .padding()
                         .border(Color.black, width: 1)
-                    
-                    // Contact view: 1
-                        HStack {
-                            
-                            VStack{ // VStack:3 -> For 2 text line in Botton
-                                Text("Name at index 1")
-                                Text("Postal code")
-                                    .font(.caption)
-                            } // VStack:3 end
-                            
-                            
-                            Button(action: { // For Star button
-                                print("Star tapped at index: 1")
-                            }) {
-                                Image(systemName: "star")
-                            }
-                        } // HStack end: include one contact view
-                        .padding()
-                        .border(Color.black, width: 1)
-                        
-                    // Contact view: 2
-                        HStack {
-                            
-                            VStack{ // VStack:3 -> For 2 text line in Botton
-                                Text("Name at index 2")
-                                Text("Postal code")
-                                    .font(.caption)
-                            } // VStack:3 end
-                            
-                            
-                            Button(action: { // For Star button
-                                print("Star tapped at index: 2")
-                            }) {
-                                Image(systemName: "star")
-                            }
-                        } // HStack end: include one contact view
-                        .padding()
-                        .border(Color.black, width: 1)
-                        
-                    // Contact view: 3
-                        HStack {
-                            
-                            VStack{ // VStack:3 -> For 2 text line in Botton
-                                Text("Name at index 3")
-                                Text("Postal code")
-                                    .font(.caption)
-                            } // VStack:3 end
-                            
-                            
-                            Button(action: { // For Star button
-                                print("Star tapped at index: 3")
-                            }) {
-                                Image(systemName: "star")
-                            }
-                        } // HStack end: include one contact view
-                        .padding()
-                        .border(Color.black, width: 1)
-                        
-                    
+                    }
                     
                 } // VStack:2 end
                 
