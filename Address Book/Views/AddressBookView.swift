@@ -12,7 +12,7 @@ struct AddressBookView: View {
     private var viewModel = AddressBookViewModel()
     
     // TODO: STATE - Add property wrapper to displayFavoriteCount property so it can be reassigned
-    private var displayFavoriteCount = true
+    @State private var displayFavoriteCount = true
     
     var body: some View {
         // to cover whole screen
@@ -38,9 +38,14 @@ struct AddressBookView: View {
                     }
                 }
                 
+                // TODO: STATE - Add toggle for displayFavoriteCount
+                
+                Toggle("Display number of favorites", isOn: $displayFavoriteCount)
+                    .padding()
+                
             } // VStack:1 end
             
-            // TODO: STATE - Add toggle for displayFavoriteCount
+            
 
         } // ZStack end
     }
