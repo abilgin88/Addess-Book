@@ -10,14 +10,11 @@ import SwiftUI
 struct AddressBookView: View {
     // TODO: STATEOBJECT - Add property wrapper to viewModel so that it observes changes
     private var viewModel = AddressBookViewModel()
-
     
     // TODO: STATE - Add property wrapper to displayFavoriteCount property so it can be reassigned
     private var displayFavoriteCount = true
     
     var body: some View {
-        
-        
         // to cover whole screen
         ZStack {
             // adding main color for whole screen with safe area

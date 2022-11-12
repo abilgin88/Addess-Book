@@ -7,9 +7,11 @@
 
 import SwiftUI
 struct ContactsView: View {
+    // TODO: ENVIRONMENTOBJECT - Add view model
+
     var body: some View {
             // A ForEach structure that allows us to loop through a collection of data and create a corresponding view for each element
-            ForEach(0..<4, id: \.self) { index in
+            ForEach(0..<4, id: \.self) { index in //TODO: ENVIRONMENTOBJECT - Use the number of contacts from the view model
                 
                 // Refactoring the HStack
                 HStack {
@@ -22,8 +24,10 @@ struct ContactsView: View {
                     
                     
                     Button(action: { // For Star button
+                        // TODO: ENVIRONMENTOBJECT - Call the appropriate view model method
                         print("Star tapped at index: \(index)")
                     }) {
+                        //TODO: ENVIRONMENTOBJECT - Update the star to be filled when the contact is a favorite
                         Image(systemName: "star")
                     }
                 } // HStack end: include one contact view
@@ -35,6 +39,6 @@ struct ContactsView: View {
 
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsView()
+        ContactsView() // TODO: ENVIRONMENTOBJECT - Add the view model to the preview
     }
 }
