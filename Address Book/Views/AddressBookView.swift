@@ -8,7 +8,15 @@
 import SwiftUI
 
 struct AddressBookView: View {
+    // TODO: STATEOBJECT - Add property wrapper to viewModel so that it observes changes
+    private var viewModel = AddressBookViewModel()
+
+    
+    // TODO: STATE - Add property wrapper to displayFavoriteCount property so it can be reassigned
+    private var displayFavoriteCount = true
+    
     var body: some View {
+        
         
         // to cover whole screen
         ZStack {
@@ -22,13 +30,21 @@ struct AddressBookView: View {
                     .font(.title)
                     .padding()
                 Spacer() // after Title
-                ContactsView() // Pass the ContactsView to the AddressBook
+                ContactsView() // Pass the ContactsView to the AddressBook //TODO: ENVIRONMENTOBJECT - Pass the viewModel to the ContactsView
                 Spacer() // After for all Contacts views
                 
-                Text("You have 0 favorite book")
-                    .padding()
+                // adding a text and add "s" based on favorited Contacts Count
+                if displayFavoriteCount {
+                    HStack {
+                        Text("You have \(viewModel.favoritedContactCount) favorite" + (viewModel.favoritedContactCount != 1 ? "s" : ""))
+                            .padding()
+                    }
+                }
                 
             } // VStack:1 end
+            
+            // TODO: STATE - Add toggle for displayFavoriteCount
+
         } // ZStack end
     }
 }
