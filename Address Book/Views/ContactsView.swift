@@ -8,27 +8,33 @@
 import SwiftUI
 struct ContactsView: View {
     // TODO: ENVIRONMENTOBJECT - Add view model
-
+    @EnvironmentObject var viewModel: AddressBookViewModel
+    
     var body: some View {
             // A ForEach structure that allows us to loop through a collection of data and create a corresponding view for each element
-            ForEach(0..<4, id: \.self) { index in //TODO: ENVIRONMENTOBJECT - Use the number of contacts from the view model
+        ForEach(0..<viewModel.contactCount, id: \.self) { index in //TODO: ENVIRONMENTOBJECT - Use the number of contacts from the view model
                 
                 // Refactoring the HStack
                 HStack {
+                    // 2 Add contact
+                    let contact = viewModel.contact(atIndex: index)
                     
                     VStack{ // VStack:3 -> For 2 text line in Botton
-                        Text("Name at index \(index)")
-                        Text("Postal code")
-                            .font(.caption)
+                        // TODO: ENVIRONMENTOBJECT - Add the correct name and postal code
+                        
+                        Text(contact.name)
+                        Text(contact.displayPostalCode)
+                            .font(.caption2)
                     } // VStack:3 end
                     
                     
                     Button(action: { // For Star button
                         // TODO: ENVIRONMENTOBJECT - Call the appropriate view model method
-                        print("Star tapped at index: \(index)")
+                        viewModel.toggleFavorite(atIndex: index)
+                        
                     }) {
                         //TODO: ENVIRONMENTOBJECT - Update the star to be filled when the contact is a favorite
-                        Image(systemName: "star")
+                        contact.isFavorite ? Image(systemName: "star.fill") : Image(systemName: "star")
                     }
                 } // HStack end: include one contact view
                 .padding()
@@ -40,5 +46,6 @@ struct ContactsView: View {
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
         ContactsView() // TODO: ENVIRONMENTOBJECT - Add the view model to the preview
+            .environmentObject(AddressBookViewModel())
     }
 }

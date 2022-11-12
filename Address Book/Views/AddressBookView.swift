@@ -27,7 +27,10 @@ struct AddressBookView: View {
                     .font(.title)
                     .padding()
                 Spacer() // after Title
-                ContactsView() // Pass the ContactsView to the AddressBook //TODO: ENVIRONMENTOBJECT - Pass the viewModel to the ContactsView
+                ContactsView() // Pass the ContactsView to the AddressBook
+                //TODO: ENVIRONMENTOBJECT - Pass the viewModel to the ContactsView
+                    .environmentObject(viewModel)
+                
                 Spacer() // After for all Contacts views
                 
                 // adding a text and add "s" based on favorited Contacts Count
