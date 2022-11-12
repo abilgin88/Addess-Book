@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853C3C28291F90F700CB6779 /* AddressBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853C3C27291F90F700CB6779 /* AddressBookViewModel.swift */; };
 		85E78046291E636D004F6C72 /* Address_BookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E78045291E636D004F6C72 /* Address_BookApp.swift */; };
 		85E78048291E636D004F6C72 /* AddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E78047291E636D004F6C72 /* AddressBookView.swift */; };
 		85E7804A291E636E004F6C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E78049291E636E004F6C72 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		853C3C27291F90F700CB6779 /* AddressBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookViewModel.swift; sourceTree = "<group>"; };
 		85E78042291E636D004F6C72 /* Address Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Address Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E78045291E636D004F6C72 /* Address_BookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address_BookApp.swift; sourceTree = "<group>"; };
 		85E78047291E636D004F6C72 /* AddressBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		853C3C29291F90FB00CB6779 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				853C3C27291F90F700CB6779 /* AddressBookViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		85E78039291E636D004F6C72 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 			children = (
 				85E78045291E636D004F6C72 /* Address_BookApp.swift */,
 				85E78055291E67CB004F6C72 /* Views */,
+				853C3C29291F90FB00CB6779 /* ViewModel */,
 				85E78057291E67E8004F6C72 /* Models */,
 				85E78049291E636E004F6C72 /* Assets.xcassets */,
 				85E7804B291E636E004F6C72 /* Preview Content */,
@@ -171,6 +182,7 @@
 				85E78046291E636D004F6C72 /* Address_BookApp.swift in Sources */,
 				85E78075291EB15F004F6C72 /* AddressBook.swift in Sources */,
 				85E78073291EAB44004F6C72 /* ContactsView.swift in Sources */,
+				853C3C28291F90F700CB6779 /* AddressBookViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
