@@ -3,10 +3,9 @@
 //  Address Book
 //
 //  Created by Abdullah Bilgin on 11/11/22.
-//
+// this view include contactsView for display Contact views on screen
 
 import SwiftUI
-
 struct ContactsView: View {
     var body: some View {
             // A ForEach structure that allows us to loop through a collection of data and create a corresponding view for each element
